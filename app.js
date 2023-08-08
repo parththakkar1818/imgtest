@@ -57,6 +57,7 @@ function cloudinaryUrlParser(url) {
   return { cloud_name, api_key, api_secret };
 }
 
-app.listen(3000,function(req,res){
-  console.log("Started");
-});
+// app.listen(3000,function(req,res){
+//   console.log("Started");
+// });
+app.listen(process.env.PORT || port,()=>console.log("started hihi"));
